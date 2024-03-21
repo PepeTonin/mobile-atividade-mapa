@@ -15,17 +15,29 @@
         android:layout_margin="16dp"
         android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-black"
+            android:text="REGIÃO SUL"
+            android:textAllCaps="true"
+            android:textSize="24sp" />
+
         <com.github.chrisbanes.photoview.PhotoView
             android:id="@+id/photo_view"
             android:layout_width="match_parent"
             android:layout_height="376dp" />
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Insira o estado desejado" />
@@ -39,8 +51,16 @@
             android:layout_marginTop="16dp"
             android:backgroundTint="#03A9F4"
             android:fontFamily="sans-serif-black"
+            android:onClick="pesquisarEstado"
             android:text="PESQUISAR"
             android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="TextView" />
 
     </LinearLayout>
 </ScrollView>
